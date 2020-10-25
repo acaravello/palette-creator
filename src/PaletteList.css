@@ -1,0 +1,13 @@
+.PaletteList {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.fade-exit {
+    opacity: 1;
+  }
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }

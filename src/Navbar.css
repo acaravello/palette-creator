@@ -1,0 +1,95 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Logo {
+    margin-right: 15px;
+    padding: 0 13px;
+    font-size: 22px;
+    background-color: #eceff1;
+    font-family: "Roboto";
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 575.98px) {
+    .Navbar {
+        flex-direction: column;
+    }
+    .Logo {
+        width: 100%;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+    }
+    .Slider-Container {
+        display: flex;
+        margin-top: 10px;
+    }
+    .Select-Container {
+        margin:auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+.Logo a, .Logo Link{
+    text-decoration: none;
+    color: #111;
+}
+
+
+.Slider {
+    width: 340px;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+@media (min-width: 575.99px) {
+    .Select-Container {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}
+
+.rc-slider-track {
+    background-color: transparent;
+}
+
+.rc-slider-rail {
+    height: 8px;
+}
+
+.rc-slider-handle, .rc-slider-handle:active, .rc-slider-handle:hover, .rc-slider-handle:focus {
+    background-color: green;
+    outline: none;
+    border: 2px solid green;
+    box-shadow: none;
+    width: 13px;
+    height: 13px;
+    margin-left: -7px;
+    margin-top: -3px;
+}
+
+
+@media (max-width: 767.98px) {
+    .Slider {
+        width: 250px;
+    }
+    .Slider-Container {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .Slider {
+        width: 150px;
+    }
+}
+
+

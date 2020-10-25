@@ -1,0 +1,16 @@
+.Palette {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.SingleColorPalette {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Palette-Colors {
+    height: 90%;
+}
+
