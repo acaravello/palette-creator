@@ -71,7 +71,10 @@ const styles = {
         textTransform: "uppercase",
         border: "none",
         opacity: "0",
-        cursor: "pointer"
+        cursor: "pointer",
+        [sizes.down("md")]: {
+            display:"none"
+        },
     }
 }
 
