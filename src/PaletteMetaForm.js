@@ -78,12 +78,12 @@ class PaletteMetaForm extends Component {
                     <DialogTitle>Choose a Palette Emoji</DialogTitle>
                 <Picker set="google" value={this.state.emoji} onSelect={this.setEmoji} title=""/>
                 </Dialog>
-                <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
+                <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title" className={classes.dialogModal}>
                     <DialogTitle id="form-dialog-title" className={classes.modalTitle}>Choose a Palette Name</DialogTitle>
                     <ValidatorForm onSubmit={this.handleSubmit} className={classes.form}>
                     <DialogContent>
                         <DialogContentText>
-                            Enter an unique name for yur palette
+                            Enter an unique name for your palette
                     </DialogContentText>
                             <TextValidator autoFocus fullWidth name="newPaletteName" label="Palette Name" value={newPaletteName} onChange={this.handleChangeForPalette}
                                 validators={["required", "isPaletteNameUnique"]} errorMessages={["This field is required", "This name is already taken"]}

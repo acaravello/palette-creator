@@ -8,14 +8,20 @@ const drawerWidth = DRAWER_WIDTH;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    overflowY: "auto"
+    overflowY: "auto",
   },
   drawer: {
-    width: drawerWidth,
     flexShrink: 0,
+    width: drawerWidth,
+    [sizes.down("xxs")]: {
+      width: "350px",
+  }
   },
   drawerPaper: {
     width: drawerWidth,
+    [sizes.down("xxs")]: {
+      width: "350px",
+  }
   },
   drawerHeader: {
     display: 'flex',
@@ -37,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: -drawerWidth,
     [sizes.down("sm")]: {
       paddingBottom: "0px",
+  },
+    [sizes.down("xxs")]: {
+      marginLeft: "-350px",
   }
   },
   contentShift: {

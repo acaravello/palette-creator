@@ -87,7 +87,7 @@ export default function NewPaletteForm({savePalette, history, palettes}) {
     <div className={classes.root}>
       <PaletteFormNav open={open} palettes={palettes} handleNewPalette={handleNewPalette} handleDrawerOpen={handleDrawerOpen} />
       <Drawer
-        className={classes.drawer} variant="persistent" anchor="left" open={open} classes={{paper: classes.drawerPaper,}}>
+        className={classes.drawer} variant="persistent" anchor="left" open={open} classes={{paper: classes.drawerPaper}}>
         
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>

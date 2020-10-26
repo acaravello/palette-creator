@@ -1,4 +1,5 @@
 import sizes from "./sizes";
+
 const styles = {
     modalButton: {
         display: "inherit",
@@ -29,6 +30,11 @@ const styles = {
             fontSize: "13px",
             padding: "4px",
             minWidth: "40px"
+        }
+    },
+    dialogModal: {
+        "& div": {
+            overflowY: "inherit"
         }
     }
 }
