@@ -71,7 +71,7 @@ class PaletteMetaForm extends Component {
         const {classes} = this.props;
         return (
             <div className={classes.modalButton}>
-                <Button variant="contained" color="secondary" onClick={this.handleClickOpen}>
+                <Button variant="contained" color="secondary" className={classes.modalPaletteButton} onClick={this.handleClickOpen}>
                     Save Palette
                 </Button>
                 <Dialog open ={this.state.openEmojiModal}>

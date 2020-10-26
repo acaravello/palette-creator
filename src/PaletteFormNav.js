@@ -41,10 +41,10 @@ class PaletteFormNav extends Component {
                             color="inherit" aria-label="open drawer" onClick={handleDrawerOpen} edge="start" className={clsx(classes.menuButton, open && classes.hide)}>
                             <MenuIcon />
                         </IconButton>
-                        <Typography variant="h6" noWrap> Create a Palette </Typography>
+                        <Typography variant="h6" noWrap>Create a Palette</Typography>
                     </Toolbar>
                     <div className={classes.navButtons}>
-                    <Link to="/" className={classes.goBackButton}><Button variant="contained" color="default">Go Back</Button></Link>
+                    <Link to="/" className={classes.goBackButton}><Button variant="contained" color="default" className={classes.goBack}>Go Back</Button></Link>
                       <PaletteMetaForm saveNewPalette={this.saveNewPalette} palettes={palettes}/>
                     </div>
                 </AppBar>

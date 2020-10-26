@@ -1,4 +1,5 @@
 import {DRAWER_WIDTH} from "../constants";
+import sizes from "./sizes";
 
 const drawerWidth = DRAWER_WIDTH;
 
@@ -13,7 +14,6 @@ const styles = theme => ({
         }),
         flexDirection: "row",
         justifyContent: "space-between",
-        // height: "64px"
       },
       appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
@@ -38,7 +38,15 @@ const styles = theme => ({
         margin: "auto", 
         textDecoration: "none",
         marginRight: "10px"
-      }
+      },
+      goBack: {
+        [sizes.down("xs")]: {
+            lineHeight: "15px",
+            fontSize: "13px",
+            padding: "4px",
+            minWidth: "40px"
+        }
+    }
 });
 
 export default styles;

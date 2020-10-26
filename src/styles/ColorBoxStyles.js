@@ -45,7 +45,14 @@ const styles = {
         textAlign: "center",
         lineHeight: "30px",
         textTransform: "uppercase",
-        fontSize: "13px"
+        fontSize: "13px",
+        [sizes.down("xs")]: {
+            height: "100%",
+            lineHeight: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+        }
     },
     copyButton: {
         color: props => chroma(props.background).luminance() >= 0.6 ? "rgba(0, 0, 0, 0.5)" : "#fff",

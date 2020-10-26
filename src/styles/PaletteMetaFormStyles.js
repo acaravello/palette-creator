@@ -1,3 +1,4 @@
+import sizes from "./sizes";
 const styles = {
     modalButton: {
         display: "inherit",
@@ -21,6 +22,14 @@ const styles = {
     },
     modalTitle: {
         textAlign: "center"
+    },
+    modalPaletteButton: {
+        [sizes.down("xs")]: {
+            lineHeight: "15px",
+            fontSize: "13px",
+            padding: "4px",
+            minWidth: "40px"
+        }
     }
 }
 
